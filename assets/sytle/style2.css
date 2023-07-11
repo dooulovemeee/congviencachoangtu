@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+}
+
+.sidebar-wrapper {
+    height: 100vh;
+    width: 252px;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 1px 10px rgb(124 124 124 / 26%);
+}
+
+.content-wrapper {
+    height: 200vh;
+    width: 100%;
+
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+.brand-name {
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar-logo {
+    text-align: center;
+}
+
+.nav-block {
+    padding: 0 8px;
+    list-style-type: none;
+}
+
+.nav-tittle {
+    color: #808184;
+    padding: 12px 6px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 12px;
+    margin-bottom: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 6px;
+
+}
+
+.nav-item:hover {
+    background-color: #8081844a;
+    transition: 0.2 ease;
+}
+
+.nav-item.nav-active {
+    background-color: #0cb9c5;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.nav-item.nav-active img {
+    filter: invert(1);
+}
+
+.header-wrapper {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    padding: 12px 8px;
+}
+
+.button-menu {
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.button-menu:hover {
+    background-color: #8081844a;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col3 {
+    width: calc(3 * 100% / 12);
+    border: 1px #fff solid;
+    box-sizing: border-box;
+}
+
+.product-img .main-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    object-position: top;
+}
+
+.product-name {
+    background-color: black;
+    color: #fff;
+    margin: 0;
+    font-size: 20px;
+    padding: 10px 12px;
+
+}
+
+.product-desc {
+    margin: 0;
+    padding: 8px 12px;
+}
+
+.product-price {
+    text-decoration: none;
+}
+
+.product-card {
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    overflow: hidden;
+
+
+}
+
+.sidebar-small {
+    width: 72px;
+}
+
+.sidebar-small .nav-tittle,
+.sidebar-small .nav-item span {
+    display: none;
+}
+
+.sidebar-small .nav-item {
+    justify-content: center;
+}
+
+.product-card:hover .icon-preview {
+    right: 24px;
+}
+
+@media only screen and (max-width: 556px) {
+    .col-sm-12 {
+        width: calc(12 * 100% / 12);
+    }
+}
+
+.product-card:hover {
+    scale: 1.05;
+    transition: 0.3s ease;
+}
+
+* {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.mini-box {
+    box-sizing: border-box;
+}
+
+.mini-box {
+    padding: 4px;
+}
+
+.icon-preview {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #8081844a;
+    box-sizing: border-box;
+    position: absolute;
+    top: 20px;
+    right: -48px;
+    cursor: pointer;
+    transition: 0.2 ease;
+
+
+
+}
+
+.icon-preview:hover {
+    background-color: #000;
+}
+
+.icon-preview:hover img {
+    filter: invert(1);
+}
+
+.product-card:hover .icon-preview {
+    right: 24px;
+    transition: 0.3s ease;
+}
+
+.hen-doi {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-img {
+    object-fit: cover;
+}
+
+.FACEBOOK {
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    border: solid 1px white;
+    width: 200px;
+}
+
+.FACEBOOK:hover {
+    color: white;
+    transition: 1s ease;
+    background-color: #77a5a8;
+}
